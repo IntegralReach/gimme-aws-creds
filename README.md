@@ -110,6 +110,7 @@ Pick a factor:
 Selection: 1
 Enter verification code: 472171
 Device token saved!
+writing role arn:aws:iam::121868943636:role/Admin to /Users/lkotipibasireddy/.aws/credentials
 
 or
 
@@ -122,6 +123,7 @@ Pick a factor:
 Selection: 1
 Okta Verify push sent...
 Device token saved!
+writing role arn:aws:iam::121868943636:role/Admin to /Users/lkotipibasireddy/.aws/credentials
 
 $ ~/anaconda3/envs/py36/bin/gimme-aws-creds
 Using password from keyring for lkotipibasireddy
