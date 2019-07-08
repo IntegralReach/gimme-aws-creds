@@ -62,11 +62,11 @@ A configuration wizard will prompt you to enter the necessary configuration para
 After running --configure, just run gimme-aws-creds. You will be prompted for the necessary information.
 
 ```bash
-$ ~/anaconda3/envs/py36/bin/gimme-aws-creds --configure --profile IR
+$ ~/anaconda3/envs/py36/bin/gimme-aws-creds --configure
 If you'd like to assign the Okta configuration to a specific profile
 instead of to the default profile, specify the name of the profile.
 This is optional.
-Okta Configuration Profile Name [IR]:
+Okta Configuration Profile Name [DEFAULT]:
 Enter the Okta URL for your organization. This is https://something.okta[preview].com
 Okta URL for your organization: https://tivo.okta.com
 Enter the URL for the gimme-creds-server or 'internal' for handling Okta APIs locally.
