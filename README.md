@@ -62,13 +62,13 @@ A configuration wizard will prompt you to enter the necessary configuration para
 After running --configure, just run gimme-aws-creds. You will be prompted for the necessary information.
 
 ```bash
-$ ~/anaconda3/envs/py36/bin/gimme-aws-creds --configure
+$ ~/anaconda3/envs/py36/bin/gimme-aws-creds --configure --profile IR
 If you'd like to assign the Okta configuration to a specific profile
 instead of to the default profile, specify the name of the profile.
 This is optional.
-Okta Configuration Profile Name [DEFAULT]:
+Okta Configuration Profile Name [IR]:
 Enter the Okta URL for your organization. This is https://something.okta[preview].com
-Okta URL for your organization: https://tivo.okta.com
+Okta URL for your organization: *https://tivo.okta.com*
 Enter the URL for the gimme-creds-server or 'internal' for handling Okta APIs locally.
 URL for gimme-creds-server [appurl]:
 Enter the application link. This is https://something.okta[preview].com/home/amazon_aws/<app_id>/something
@@ -76,25 +76,30 @@ Application url: https://tivo.okta.com/home/amazon_aws/0oa6xpru465nLsUoY1t7/272
 Do you want to write the temporary AWS to ~/.aws/credentials?
 If no, the credentials will be written to stdout.
 Please answer y or n.
-Write AWS Credentials [n]:
+Write AWS Credentials [n]: y
 Do you want to resolve aws account id to aws alias ?
 Please answer y or n.
-Resolve AWS alias [n]:
+Resolve AWS alias [n]: y
 Enter the ARN for the AWS role you want credentials for. 'all' will retrieve all roles.
 This is optional, you can select the role when you run the CLI.
-AWS Role ARN:
+AWS Role ARN: all
 If you'd like to set your okta username in the config file, specify the username
 .This is optional.
 Okta User Name: lkotipibasireddy
 If you'd like to set the default session duration, specify it (in seconds).
 This is optional.
-AWS Default Session Duration [3600]:
+AWS Default Session Duration [3600]: 43200
 If you'd like to set a preferred device type to use for MFA, enter it here.
 This is optional. valid devices types:[sms, call, push, token, token:software:totp]
 Preferred MFA Device Type: push
 Do you want the MFA device be remembered?
 Please answer y or n.
 Remember device [n]: y
+The AWS credential profile defines which profile is used to store the temp AWS creds.
+If set to 'role' then a new profile will be created matching the role name assumed by the user.
+If set to 'default' then the temp creds will be stored in the default profile
+If set to any other value, the name of the profile will match that value.
+AWS Credential Profile [role]: IR
 
 $ ~/anaconda3/envs/py36/bin/gimme-aws-creds --register_device
 Using password from keyring for lkotipibasireddy
