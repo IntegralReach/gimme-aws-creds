@@ -91,10 +91,10 @@ This is optional.
 AWS Default Session Duration [3600]: 43200
 If you'd like to set a preferred device type to use for MFA, enter it here.
 This is optional. valid devices types:[sms, call, push, token, token:software:totp]
-Preferred MFA Device Type: push
+Preferred MFA Device Type: 
 Do you want the MFA device be remembered?
 Please answer y or n.
-Remember device [n]: y
+Remember device [n]: n
 The AWS credential profile defines which profile is used to store the temp AWS creds.
 If set to 'role' then a new profile will be created matching the role name assumed by the user.
 If set to 'default' then the temp creds will be stored in the default profile
@@ -103,10 +103,23 @@ AWS Credential Profile [role]: IR
 
 $ ~/anaconda3/envs/py36/bin/gimme-aws-creds --register_device
 Using password from keyring for lkotipibasireddy
-Password for lkotipibasireddy:
-Do you want to save this password in the keyring? (y/n) n
 Multi-factor Authentication required.
-Okta Verify App: SmartPhone_Android: LG-H918 selected
+Pick a factor:
+[ 0 ] Okta Verify App: SmartPhone_Android: LG-H918
+[ 1 ] token:software:totp( OKTA ) : lkotipibasireddy@corporate.local
+Selection: 1
+Enter verification code: 472171
+Device token saved!
+
+or
+
+$ ~/anaconda3/envs/py36/bin/gimme-aws-creds --register_device
+Using password from keyring for lkotipibasireddy
+Multi-factor Authentication required.
+Pick a factor:
+[ 0 ] token:software:totp( OKTA ) : lkotipibasireddy@corporate.local
+[ 1 ] Okta Verify App: SmartPhone_Android: LG-H918
+Selection: 1
 Okta Verify push sent...
 Device token saved!
 
