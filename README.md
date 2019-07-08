@@ -110,7 +110,7 @@ Pick a factor:
 Selection: 1
 Enter verification code: 472171
 Device token saved!
-writing role arn:aws:iam::121868943636:role/Admin to /Users/lkotipibasireddy/.aws/credentials
+
 
 or
 
@@ -123,22 +123,18 @@ Pick a factor:
 Selection: 1
 Okta Verify push sent...
 Device token saved!
-writing role arn:aws:iam::121868943636:role/Admin to /Users/lkotipibasireddy/.aws/credentials
 
 $ ~/anaconda3/envs/py36/bin/gimme-aws-creds
 Using password from keyring for lkotipibasireddy
-Password for lkotipibasireddy:
-Password for lkotipibasireddy:
-Do you want to save this password in the keyring? (y/n) y
-Password for lkotipibasireddy saved in keyring.
 Multi-factor Authentication required.
-Okta Verify App: SmartPhone_Android: LG-H918 selected
+Pick a factor:
+[ 0 ] Okta Verify App: SmartPhone_Android: LG-H918
+[ 1 ] token:software:totp( OKTA ) : lkotipibasireddy@corporate.local
+Selection: 0
 Okta Verify push sent...
-Detected single role: arn:aws:iam::121868943636:role/Admin
-export AWS_ACCESS_KEY_ID=ASIARYX7UQEKPOPWARN4
-export AWS_SECRET_ACCESS_KEY=/xUSw2HyfH/dnSBpFCeoCIfASzvhgs9b8ziLiX3Z
-export AWS_SESSION_TOKEN=FQoGZXIvYXdzEB0aDIog1NudD2NYoBzwZSLCAlzhL1qpg01XwvXWnMpo9UamDQYjutVxnU3JgcwgjAQ6pJFCFKc90R5L6+e8C+JeV6cpSYi3ccjBLO0xjcjw4p4dIFI9tvfP77vm8n0TRjdxKvM8bIeY2HdjhmTqYTUSsp4CEoHO6pfoZpda1vLgyCqXijZNw6uCowMoeHwbJtA0ClS55/tX97uLFSb+Ss1htSYzkEazvBv5/RkG3RiAo5V0vw2ci/GBMFbHGkVZWk5mal7Cp7OsWv3D0VMkAbEm04wIjpa0WmUPFD2qnB3PddgA+zVd7t9KKFlOTZWb0fdW+7LhT66lAaeWO5rN7H7VXGKYdjznjtVSIfDBAz29S4K7a9tyloTLOUrGP8qrDTwfg62dQIlkhKWGUyyk0892hu+/Pyqv0a1CbdqmkzzESu3/4zEKhWXKtkjzEsZUMvqQVTkolrWO6QU=
-export AWS_SECURITY_TOKEN=FQoGZXIvYXdzEB0aDIog1NudD2NYoBzwZSLCAlzhL1qpg01XwvXWnMpo9UamDQYjutVxnU3JgcwgjAQ6pJFCFKc90R5L6+e8C+JeV6cpSYi3ccjBLO0xjcjw4p4dIFI9tvfP77vm8n0TRjdxKvM8bIeY2HdjhmTqYTUSsp4CEoHO6pfoZpda1vLgyCqXijZNw6uCowMoeHwbJtA0ClS55/tX97uLFSb+Ss1htSYzkEazvBv5/RkG3RiAo5V0vw2ci/GBMFbHGkVZWk5mal7Cp7OsWv3D0VMkAbEm04wIjpa0WmUPFD2qnB3PddgA+zVd7t9KKFlOTZWb0fdW+7LhT66lAaeWO5rN7H7VXGKYdjznjtVSIfDBAz29S4K7a9tyloTLOUrGP8qrDTwfg62dQIlkhKWGUyyk0892hu+/Pyqv0a1CbdqmkzzESu3/4zEKhWXKtkjzEsZUMvqQVTkolrWO6QU=
+writing role arn:aws:iam::121868943636:role/Admin to /Users/lkotipibasireddy/.aws/credentials
+
+
 ```
 
 You can run a specific configuration profile with the `--profile` parameter:
