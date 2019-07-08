@@ -68,7 +68,7 @@ instead of to the default profile, specify the name of the profile.
 This is optional.
 Okta Configuration Profile Name [IR]:
 Enter the Okta URL for your organization. This is https://something.okta[preview].com
-Okta URL for your organization: *https://tivo.okta.com*
+Okta URL for your organization: https://tivo.okta.com
 Enter the URL for the gimme-creds-server or 'internal' for handling Okta APIs locally.
 URL for gimme-creds-server [appurl]:
 Enter the application link. This is https://something.okta[preview].com/home/amazon_aws/<app_id>/something
