@@ -57,8 +57,6 @@ A configuration wizard will prompt you to enter the necessary configuration para
 
 ## Usage
 
-**If you are not using gimme-creds-lambda nor using appurl settings, make sure you set the OKTA_API_KEY environment variable.**
-
 After running --configure, just run gimme-aws-creds. You will be prompted for the necessary information.
 
 ```bash
